@@ -1,0 +1,43 @@
+{
+    "name": "dekts/laravelbooleansoftdeletes",
+    "description": ":description",
+    "license": "license",
+    "authors": [
+        {
+            "name": "Devat Karetha",
+            "email": "devat.karetha@viitor.cloud",
+            "homepage": "https://devat73.wordpress.com"
+        }
+    ],
+    "homepage": "https://github.com/dekts/laravelbooleansoftdeletes",
+    "keywords": ["Laravel", "LaravelBooleanSoftdeletes"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "dekts\\LaravelBooleanSoftdeletes\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "dekts\\LaravelBooleanSoftdeletes\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "dekts\\LaravelBooleanSoftdeletes\\LaravelBooleanSoftdeletesServiceProvider"
+            ],
+            "aliases": {
+                "LaravelBooleanSoftdeletes": "dekts\\LaravelBooleanSoftdeletes\\Facades\\LaravelBooleanSoftdeletes"
+            }
+        }
+    }
+}
